@@ -1,4 +1,90 @@
-# CUSTOMER-DATA-ANALYSIS
+# PROJECT TITLE :CUSTOMER-DATA-ANALYSIS
+### Project Overview
+
+
+### SQL
+```SQL
+---------------project 2 Analysis---------
+-------Customer Segmentation For a Subscription Service-------
+
+1 ---Total number of customers for each region---
+select*from[dbo].[Customer Data ]
+
+select Region, count(CustomerID) AS Total_Customer
+from [dbo].[Customer Data ]
+group by Region
+
+-------or count using customer name------
+select Region, count(CustomerName) AS Total_Customer
+from [dbo].[Customer Data ]
+group by Region
+
+2-------Most popular subscription----
+select TOP 1 SubscriptionType,
+count(CustomerID)as MOST_POPULAR
+FROM[dbo].[Customer Data ]
+Group by SubscriptionType
+order by Most_popular desc
+
+ 3-------Customers who cancelled within 6 months---
+Select CustomerID
+ FROM[dbo].[Customer Data ]
+ WHERE DATEDIFF (Month,SubscriptionStart,SubscriptionEnd)<=6;
+
+ ---or-----
+
+ 4------average sub. duration for all customers-----
+ select AVG(datediff(day,SubscriptionStart,SubscriptionEnd)) 
+ as Average_Subscription_Duration
+ FROM [dbo].[Customer Data ]
+
+ 5------customers with sub. longer than 12 months----
+ SELECT CustomerID FROM [dbo].[Customer Data ]
+ WHERE Datediff(month,SubscriptionStart,SubscriptionEnd)>12;
+
+ 6------total revenue by sub. type---------
+ select SubscriptionType, 
+ SUM (Revenue) as Totalrevenue
+ from [dbo].[Customer Data ]
+GROUP BY SubscriptionType
+
+ -----Top the 3 regions by subscription type----
+ select*from[dbo].[Customer Data ]
+
+SELECT Top 3 Region,
+count(*) as Top_Region
+from [dbo].[Customer Data ]
+group by Region
+order by Top_Region desc
+-----or------
+select TOP 3 Region,
+count(SubscriptionType)as Top_Regions
+FROM[dbo].[Customer Data ]
+Group by Region
+order by Top_Regions desc
+
+-----Top the 3 regions by subscription Cancellation----
+select TOP 3 Region,
+count(*)as Region_cancellation
+FROM[dbo].[Customer Data ]
+where canceled=1
+Group by Region
+order by Region_cancellation desc
+----
+select TOP 3 Region,
+count(*)as Region_cancellation
+FROM[dbo].[Customer Data ]
+where canceled=0
+Group by Region
+order by Region_cancellation desc
+
+
+8------Total active and cancelled sub.------
+
+Select canceled,count(*) as Total_subscriptions
+from [dbo].[Customer Data ]
+group by canceled
+
 
 ### Data Visualisation
 
