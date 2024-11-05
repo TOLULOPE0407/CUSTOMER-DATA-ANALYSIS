@@ -102,4 +102,4 @@ group by canceled
 
 
 
-![Customer Power BI](https://github.com/user-attachments/assets/d6c8ad55-32c7-4b6a-a413-4aa3e5f7a3bd)
+
