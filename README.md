@@ -2,9 +2,11 @@
 ---
 [Project Overview](#project-overview)
 
-[Structured Query language](#structured-query-language)
+[Tools Used](#tools-used)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Structured Query language](#structured-query-language)
 
 [Data Visualistion Excel](#data-visualisation-excel)
 
@@ -16,6 +18,7 @@
 
 
 ### Project Overview
+ This project involves analyzing customer data for a subscription service to identify segments and trends. This analysing will give us a bird eye view of the customer behaviour,help track subscrition types and help identify key trends in cancellation and renewals. This project 
 
 
 ---
