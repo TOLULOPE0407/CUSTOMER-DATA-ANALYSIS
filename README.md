@@ -1,13 +1,24 @@
 # PROJECT TITLE :CUSTOMER-DATA-ANALYSIS
 ---
+[Project Overview](#project-overview)
+
+[Structured Query language](#structured-query-language)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Visualistion Excel](#data-visualisation-excel)
+
+[Data Visualisation Power BI](Data-Visualisation-powerbi)
+
+
 ### Project Overview
+
+
 ---
 
-
-
-### SQL
+### Structured Query Language
 ```SQL
----------------project 2 Analysis---------
+
 -------Customer Segmentation For a Subscription Service-------
 
 1 ---Total number of customers for each region---
