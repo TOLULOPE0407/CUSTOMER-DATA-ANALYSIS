@@ -120,3 +120,11 @@ group by canceled
 Data Visualisation Power BI
 ![Customer data 1 (1)](https://github.com/user-attachments/assets/7e868354-a8fb-4174-8803-204472ed64f0)
 
+
+### Insight
+
+
+
+### Recommendation
+
+
