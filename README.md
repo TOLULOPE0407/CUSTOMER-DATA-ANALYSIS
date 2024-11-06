@@ -10,6 +10,10 @@
 
 [Data Visualisation Power BI](Data-Visualisation-powerbi)
 
+[Insight](#insight)
+
+[Recommendation](#recommendation)
+
 
 ### Project Overview
 
@@ -100,7 +104,7 @@ from [dbo].[Customer Data ]
 group by canceled
 ```
 
-### Data Visualisation
+### Data Visualisation Excel
 ---
 
 ![Customer Data1](https://github.com/user-attachments/assets/d2e1dd60-3171-4c4c-bd1f-6336ef58cf63)
@@ -113,5 +117,6 @@ group by canceled
 
 
 
+Data Visualisation Power BI
 ![Customer data 1 (1)](https://github.com/user-attachments/assets/7e868354-a8fb-4174-8803-204472ed64f0)
 
